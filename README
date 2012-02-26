@@ -1,0 +1,24 @@
+ORIGIN
+
+"I want a list of the games I play to put on this webpage." - wildcraze.info
+
+GETTING STARTED
+
+- Have these files available on a webserver somewhere
+- Rename xfire.example.conf to xfire.conf and move it outside the web root
+- May have to adjust the number of ../ in file reference on top of the php files
+- Use the files to populate your web pages. Iframe is the easiest one.
+
+FILES AND FEATURES
+
+classes/CrazeDownload.class.php
+	This download class is used to download text and images from Xfire.com. A local cache is used to reduce traffic.
+
+gameplay.php
+	Display games played in the last 7 days. Config file includes an option to specify minimum time spent in game before being shown on page.
+
+server.php
+	Display servers marked as favorites in the Xfire client. Ports can be hidden if standard ones. Displays hostname if forward and reverse DNS matches, otherwise just the IP.
+
+xfire.example.conf
+	The example configuration. Rename and move outside the web root for safety.
